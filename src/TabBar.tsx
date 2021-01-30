@@ -363,6 +363,7 @@ export default class TabBar<T extends Route> extends React.Component<
         onLayout={this.handleLayout}
         style={[styles.tabBar, style]}
       >
+      <View style={{backgroundColor: 'red', height: 200, width: 200}}></View>
         <Animated.View
           pointerEvents="none"
           style={[
