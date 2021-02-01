@@ -493,7 +493,7 @@ export default class TabBar<T extends Route> extends React.Component<
             })}
           </Animated.ScrollView>
         </View>
-        <LinearGradient/>
+        </LinearGradient>
       </Animated.View>
     );
   }
