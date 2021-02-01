@@ -12,6 +12,7 @@ import {
 import Animated from 'react-native-reanimated';
 import TabBarItem, { Props as TabBarItemProps } from './TabBarItem';
 import TabBarIndicator, { Props as IndicatorProps } from './TabBarIndicator';
+import { LinearGradient } from 'expo-linear-gradient';
 import memoize from './memoize';
 import {
   Route,
@@ -363,7 +364,11 @@ export default class TabBar<T extends Route> extends React.Component<
         onLayout={this.handleLayout}
         style={[styles.tabBar, style]}
       >
-      <View style={{backgroundColor: 'red', height: 200, width: 200}}></View>
+      <LinearGradient
+        // Background Linear Gradient
+        colors={['#f6f6f6', 'transparent']}
+        style={{flex: 1}}
+      />
         <Animated.View
           pointerEvents="none"
           style={[
@@ -488,6 +493,7 @@ export default class TabBar<T extends Route> extends React.Component<
             })}
           </Animated.ScrollView>
         </View>
+        <LinearGradient/>
       </Animated.View>
     );
   }
