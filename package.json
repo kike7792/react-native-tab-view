@@ -72,7 +72,7 @@
     "react-native": "*",
     "react-native-gesture-handler": "*",
     "react-native-reanimated": "*",
-    "expo-linear-gradient": "*",
+    "expo-linear-gradient": "*"
   },
   "husky": {
     "hooks": {
