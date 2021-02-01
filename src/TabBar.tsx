@@ -368,7 +368,7 @@ export default class TabBar<T extends Route> extends React.Component<
         // Background Linear Gradient
         colors={['#f6f6f6', 'transparent']}
         style={{flex: 1}}
-      />
+      >
         <Animated.View
           pointerEvents="none"
           style={[
